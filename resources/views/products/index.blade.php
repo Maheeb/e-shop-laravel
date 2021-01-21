@@ -1,37 +1,42 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.master')
+@section('content')
+<h1>List of Products</h1>
 
-<div class="table-responsive">
- <table class="table table-striped">
-     <thead class="thead-light">
+@empty($products)
+    <div class="alert alert-warning">
+        <h1>Product list is empty</h1>
+    </div>
+
+@else
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead class="thead-light">
             <th>Id</th>
             <th>Title</th>
             <th>Description</th>
-     </thead>
-     <tbody>
-        <tr>
-            <td>1</td>
-            <td>Soap 1</td>
-            <td>Soap Number 1</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Soap 2</td>
-            <td>Soap Number 2</td>
-        </tr>
-     </tbody>
- </table>
-
-</div>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Status</th>
+            </thead>
+            <tbody>
 
 
-</body>
-</html>
+            @foreach($products as $product)
+
+
+                <tr>
+                    <td>{{$product->id}}</td>
+                    <td>{{$product->title}}</td>
+                    <td>{{$product->description}}</td>
+                    <td>{{$product->price}}</td>
+                    <td>{{$product->stock}}</td>
+                    <td>{{$product->status}}</td>
+
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+
+    </div>
+    @endif
+@endsection

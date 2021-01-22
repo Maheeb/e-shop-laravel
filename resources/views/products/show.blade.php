@@ -1,5 +1,4 @@
-@extends('layouts.master')
+@extends('layouts.app')
 @section('content')
-<h1>Soap 1</h1>
-<p>Best Soap ever</p>
+    @include('components.product-card')
 @endsection

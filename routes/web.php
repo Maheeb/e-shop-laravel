@@ -13,14 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+Route::get('/','MainController@index')->name('main.index');
 
 Route::get('products','ProductController@index')->name('products.index');
-Route::get('products/create','ProductController@create')->name('products.create');
+Route::get('products/new','ProductController@create')->name('products.create');
 Route::get('products/{product}','ProductController@show')->name('products.show');
-Route::delete('products/{product}','ProductController@destroy')->name('products.destory');
+Route::delete('products/{product}','ProductController@destroy')->name('products.destroy');
 Route::get('products/{product}/edit','ProductController@edit')->name('products.edit');
 Route::match(['put','patch'],'products/{product}','ProductController@update')->name('products.update');
-Route::post('products','ProductController@store')->name('products.show');
+Route::post('products','ProductController@store')->name('products.store');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

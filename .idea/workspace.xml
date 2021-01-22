@@ -2,45 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b87671f-b343-45f6-9ba3-f4264814d4a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ImageController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CartFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/OrderFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/PaymentFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102506_create_images_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102544_create_carts_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102550_create_orders_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102554_create_payments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/CartSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/ImageSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/OrderSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/PaymentSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/product-card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/products/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/e-shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/e-shop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_170045_create_order_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_170315_create_cart_product_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/products/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/users/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/users/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/users/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/users/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/users/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/users/6.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Payment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ImageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/OrderFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/OrderFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PaymentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PaymentFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_22_102506_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102506_create_images_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_22_102550_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102550_create_orders_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_22_102554_create_payments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102554_create_payments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,8 +176,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\e-shop\public" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -216,6 +216,10 @@
       <workItem from="1610901647670" duration="333000" />
       <workItem from="1611221567479" duration="25380000" />
       <workItem from="1611306058215" duration="6074000" />
+      <workItem from="1611321924227" duration="3798000" />
+      <workItem from="1611326830620" duration="222000" />
+      <workItem from="1611332547654" duration="7186000" />
+      <workItem from="1611347193664" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="Product table factory,seeder and migration done">
       <created>1611254110983</created>
@@ -224,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611254110983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Product Controller and authentication done">
+      <created>1611322152980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611322152980</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +257,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Product table factory,seeder and migration done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Product table factory,seeder and migration done" />
+    <MESSAGE value="Product Controller and authentication done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Product Controller and authentication done" />
   </component>
 </project>

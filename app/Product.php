@@ -20,13 +20,15 @@ class Product extends Model
     public function carts()
     {
 
-        return $this->belongsToMany(Cart::class)->withPivot('quantity');
+        // return $this->belongsToMany(Cart::class)->withPivot('quantity');
+        return $this->morphedByMany(Cart::class,'producttable')->withPivot('quantity');
     }
 
     public function orders()
     {
 
-        return $this->belongsToMany(Order::class)->withPivot('quantity');
+        // return $this->belongsToMany(Order::class)->withPivot('quantity');
+        return $this->morphedByMany(Order::class,'producttable')->withPivot('quantity');
     }
 
     public function images()

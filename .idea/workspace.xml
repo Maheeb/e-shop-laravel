@@ -2,39 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b87671f-b343-45f6-9ba3-f4264814d4a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_170045_create_order_product_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_170315_create_cart_product_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/products/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/users/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/users/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/users/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/users/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/users/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/users/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/UserImageFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Image.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Payment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Payment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/factories/ImageFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ImageFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/OrderFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/OrderFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PaymentFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PaymentFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_22_102506_create_images_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102506_create_images_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_22_102550_create_orders_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102550_create_orders_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_22_102554_create_payments_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_01_22_102554_create_payments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_01_22_170045_create_order_product_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -220,6 +195,7 @@
       <workItem from="1611326830620" duration="222000" />
       <workItem from="1611332547654" duration="7186000" />
       <workItem from="1611347193664" duration="23000" />
+      <workItem from="1611355701774" duration="3442000" />
     </task>
     <task id="LOCAL-00001" summary="Product table factory,seeder and migration done">
       <created>1611254110983</created>

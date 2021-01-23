@@ -10,7 +10,7 @@
 
         @if(isset($cart))
 
-
+            <p class="card-text">{{$product->pivot->quantity}} in your cart<strong> (${{$product->total}})</strong></p>
             <form class="d-inline"
                   action="{{route('products.carts.destroy',['product'=>$product->id,'cart'=>$cart->id])}}"
                   method="post">

@@ -10,8 +10,9 @@
         </div>
 
     @else
+        <h4 class="text-center"><strong>Grand Total: </strong>$ {{$cart->total}}</h4>
+        <a href="{{route('orders.create')}}" class="btn btn-success mb-3">Start Order</a>
         <div class="row">
-
             @foreach($cart->products as $product)
                 <div class="col-3">
 

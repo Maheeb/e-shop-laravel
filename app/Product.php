@@ -21,24 +21,31 @@ class Product extends Model
     {
 
         // return $this->belongsToMany(Cart::class)->withPivot('quantity');
-        return $this->morphedByMany(Cart::class,'producttable')->withPivot('quantity');
+        return $this->morphedByMany(Cart::class, 'producttable')->withPivot('quantity');
     }
 
     public function orders()
     {
 
         // return $this->belongsToMany(Order::class)->withPivot('quantity');
-        return $this->morphedByMany(Order::class,'producttable')->withPivot('quantity');
+        return $this->morphedByMany(Order::class, 'producttable')->withPivot('quantity');
     }
 
     public function images()
     {
-        return $this->morphMany(Image::class,'imageable');
+        return $this->morphMany(Image::class, 'imageable');
     }
 
-    public function scopeAvailable($query){
+    public function scopeAvailable($query)
+    {
 
-        return $query->where('status','available');
+        return $query->where('status', 'available');
     }
+
+    public function getTotalAttribute()
+    {
+        return $this->price * $this->pivot->quantity;
+    }
+
 
 }

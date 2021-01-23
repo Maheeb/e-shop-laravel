@@ -27,6 +27,8 @@ Route::match(['put','patch'],'products/{product}','ProductController@update')->n
 Route::post('products','ProductController@store')->name('products.store');
 
 Route::resource('products.carts','ProductCartController')->only(['store','destroy']);
+Route::resource('orders','OrderController')->only(['create','store']);
+Route::resource('orders.payments','OrdePaymentController')->only(['create','store']);
 Route::resource('carts','CartController')->only(['index']);
 Auth::routes();
 

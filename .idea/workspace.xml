@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b87671f-b343-45f6-9ba3-f4264814d4a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductCartController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/CartService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/carts/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdePaymentController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/orders/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/payments/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/carts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/carts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/components/product-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/product-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -198,7 +199,7 @@
       <workItem from="1611347193664" duration="23000" />
       <workItem from="1611355701774" duration="3712000" />
       <workItem from="1611391148331" duration="6159000" />
-      <workItem from="1611417713645" duration="6479000" />
+      <workItem from="1611417713645" duration="14041000" />
     </task>
     <task id="LOCAL-00001" summary="Product table factory,seeder and migration done">
       <created>1611254110983</created>
@@ -221,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611359200765</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Cart page done">
+      <created>1611426094076</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611426094076</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +253,7 @@
     <MESSAGE value="Product table factory,seeder and migration done" />
     <MESSAGE value="Product Controller and authentication done" />
     <MESSAGE value="Image factory modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="Image factory modified" />
+    <MESSAGE value="Cart page done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cart page done" />
   </component>
 </project>

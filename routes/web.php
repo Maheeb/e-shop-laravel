@@ -26,6 +26,8 @@ Route::get('products/{product}/edit','ProductController@edit')->name('products.e
 Route::match(['put','patch'],'products/{product}','ProductController@update')->name('products.update');
 Route::post('products','ProductController@store')->name('products.store');
 
+Route::resource('products.carts','ProductCartController')->only(['store','destroy']);
+Route::resource('carts','CartController')->only(['index']);
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

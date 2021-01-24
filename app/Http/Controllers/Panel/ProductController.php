@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Http\Controllers;
+//namespace App\Http\Controllers;
+namespace App\Http\Controllers\Panel;
 
 use App\Http\Requests\ProductRequest;
 use App\Product;

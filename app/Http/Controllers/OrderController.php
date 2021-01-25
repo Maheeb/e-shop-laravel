@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Order;
 use App\Services\CartService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Validation\ValidationException;
 use function PHPUnit\Framework\isEmpty;
 
 class OrderController extends Controller
@@ -51,7 +53,10 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        return DB::transaction(function () use ($request){
+
+
         $user = $request->user();
 
         $order = $user->orders()->create(['status'=>"pending"]);
@@ -60,13 +65,27 @@ class OrderController extends Controller
 
         $cartProductsWithQuanity = $cart->products->mapWithKeys(function ($product){
 
-            $element[$product->id] = ['quantity'=>$product->pivot->quantity];
+
+            $quantity = $product->pivot->quantity;
+            if ($product->stock < $quantity) {
+                throw ValidationException::withMessages([
+
+                        'cart' => "There is not enough quantity for the product {$product->title} you ordered"
+                ]);
+            }
+
+            //decrement
+            $product->decrement('stock', $quantity);
+
+            // $element[$product->id] = ['quantity'=>$product->pivot->quantity];
+            $element[$product->id] = ['quantity'=>$quantity];
             return $element;
         });
 
         $order->products()->attach($cartProductsWithQuanity->toArray());
 
         return redirect()->route('orders.payments.create',['order'=>$order->id]);
+    },5);
     }
 
     /**

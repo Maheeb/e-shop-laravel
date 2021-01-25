@@ -27,7 +27,8 @@ class ProductRequest extends FormRequest
             'title'=>['required','max:255'],
             'description'=>['required','max:1000'],
             'price'=>['required','min:1'],
-            'status'=>['required','min:0'],
+            'stock'=>['required','min:0'],
+            'status'=>['required','in:available,unavailable'],
         ];
     }
 

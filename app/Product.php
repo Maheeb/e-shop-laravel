@@ -2,20 +2,25 @@
 
 namespace App;
 
+use App\Scopes\AvailableScope;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
     protected $table = "products";
 
+    protected $with = ['images'];
+
     protected $fillable =
-        [
-            "title",
-            "description",
-            "price",
-            "stock",
-            "status",
-        ];
+    [
+        "title",
+        "description",
+        "price",
+        "stock",
+        "status",
+    ];
+
+
 
     public function carts()
     {
@@ -46,6 +51,4 @@ class Product extends Model
     {
         return $this->price * $this->pivot->quantity;
     }
-
-
 }

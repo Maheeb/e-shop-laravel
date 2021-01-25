@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -18,6 +19,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name', 'email', 'password',
+
     ];
 
     /**
@@ -38,7 +40,10 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    protected $dates = ['payed_at'];
+    protected $dates = [
+//        'payed_at'
+    'admin_since'
+    ];
 
     public function orders()
     {
@@ -53,7 +58,14 @@ class User extends Authenticatable
 
     public function image()
     {
-        return $this->morphOne(Image::class,'imageable');
+        return $this->morphOne(Image::class, 'imageable');
     }
+
+    public function isAdmin()
+    {
+        return $this->admin_since != null && $this->admin_since->lessThanOrEqualTo(now());
+
+    }
+
 
 }

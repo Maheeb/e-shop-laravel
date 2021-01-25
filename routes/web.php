@@ -27,9 +27,12 @@ Route::get('/','MainController@index')->name('main.index');
 //Route::post('products','ProductController@store')->name('products.store');
 
 Route::resource('products.carts','ProductCartController')->only(['store','destroy']);
-Route::resource('orders','OrderController')->only(['create','store']);
-Route::resource('orders.payments','OrdePaymentController')->only(['create','store']);
+Route::resource('orders','OrderController')->only(['create','store'])->middleware(['verified']);
+Route::resource('orders.payments','OrdePaymentController')->only(['create','store'])->middleware(['verified']);
 Route::resource('carts','CartController')->only(['index']);
-Auth::routes();
+Auth::routes([
+    'verify' => true,
+    // 'reset' => false
+]);
 
 // Route::get('/home', 'HomeController@index')->name('home');
